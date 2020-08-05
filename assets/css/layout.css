@@ -1,0 +1,11 @@
+#app {
+  display: flex;
+  flex-wrap: wrap; }
+
+@media screen and (max-width: 1024px) {
+  #app {
+    display: flow-root; }
+  .menu {
+    width: 0px; }
+  .menu--submenu > ul {
+    display: flow-root; } }

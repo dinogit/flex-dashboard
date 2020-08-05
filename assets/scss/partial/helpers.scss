@@ -1,0 +1,21 @@
+.avatar {
+    // width: 45px;
+    // height: 40px;
+    // line-height: 40px;
+    color: $red;
+    line-height: 2.4;
+
+    &__profile {
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid;
+    }
+
+    &__is-round {
+        // border-radius: 50%;
+        // height: 130%;
+        // width: 90%;
+        // margin-top: -5px;
+        // line-height: 2.4;
+    }
+}

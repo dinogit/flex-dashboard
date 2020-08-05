@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Flexbox Dashboard</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css" />-->
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+	<div id="app">
+		<header class="header">
+			<div class="header-logo">
+				<a href="#">
+					<div class="avatar">
+						FBD
+					</div>
+				</a>
+			</div>
+			<div class="header-content">
+				<a href="#" class="menu__action" @click.prevent="menuToggle">
+					<i class="icon-menu"></i>
+				</a>
+				<div class="header--actions">
+					<ul>
+						<li>
+							<a href="#" class="btn-help">
+								<i class="icon-question-mark"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="btn-notifications active">
+								<el-tag type="danger">117</el-tag>
+								<i class="icon-alert"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-settings"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </header>
+        <nav class="menu" data-menu-toggle="open" data-menu-is-expanded="false">
+			<ul>
+				<li>
+					<a href="#" @click.prevent="expandMenu()">
+						<i class="icon-forward"></i>
+						<p class="sidebar--desc">Menu</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-home"></i>
+						<p class="sidebar--desc">Home</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-chart-1"></i>
+						<p class="sidebar--desc">Monitoring Outcomes And Action Plans</p>
+					</a>
+					<div class="menu--submenu">
+						<ul>
+							<li>
+								<a href="#">
+									<p>Monitoring Outcomes and Action Results</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p>Menu 2</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-tasks"></i>
+						<p class="sidebar--desc">Tasks</p>
+					</a>
+					<div class="menu--submenu">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="icon-plus"></i>
+									<p>New Task</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-archive"></i>
+									<p>Archive</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-search"></i>
+									<p>Search</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="is-active">
+						<i class="icon-messages"></i>
+						<p class="sidebar--desc">Messages</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-link"></i>
+						<p class="sidebar--desc">Important Links</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-images"></i>
+						<p class="sidebar--desc">Upload</p>
+					</a>
+				</li>
+				<!--<li>
+					<a href="#">
+						<i class="icon-write"></i>
+						<p class="sidebar--desc">Write Plan</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-chart-pie"></i>
+						<p class="sidebar--desc">Chart Pie Graph</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-note"></i>
+						<p class="sidebar--desc">Note</p>
+					</a>
+				</li>-->
+				<li>
+					<a href="#">
+						<i class="icon-search"></i>
+						<p class="sidebar--desc">Advanced Search</p>
+					</a>
+				</li>
+			</ul>
+        </nav>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</body>
+
+</html>
+
+
+<script>
+	let vm = new Vue({
+		el: '#app',
+		data() {
+			return {
+				tableData: [{
+					date: '2016-05-03',
+					name: 'Tom',
+					address: 'No. 189, Grove St, Los Angeles'
+				}, {
+					date: '2016-05-02',
+					name: 'Tom',
+					address: 'No. 189, Grove St, Los Angeles'
+				}, {
+					date: '2016-05-04',
+					name: 'Tom',
+					address: 'No. 189, Grove St, Los Angeles'
+				}, {
+					date: '2016-05-01',
+					name: 'Tom',
+					address: 'No. 189, Grove St, Los Angeles'
+				}],
+				options: [{
+					value: 'Option1',
+					label: 'Option1'
+				}, {
+					value: 'Option2',
+					label: 'Option2'
+				}, {
+					value: 'Option3',
+					label: 'Option3'
+				}, {
+					value: 'Option4',
+					label: 'Option4'
+				}, {
+					value: 'Option5',
+					label: 'Option5'
+				}],
+				value: ''
+			}
+		},
+		filters: {
+
+		},
+		methods: {
+
+			menuToggle(event) {
+
+				const toggle = document.querySelectorAll('.sidebar')[0].dataset.toggle;
+
+				if (toggle === 'open') {
+					document.querySelectorAll('.sidebar')[0].dataset.toggle = 'closed';
+				} else {
+					document.querySelectorAll('.sidebar')[0].dataset.toggle = 'open';
+				}
+
+			},
+
+			expandMenu(event) {
+
+				const expand = document.querySelectorAll('.menu')[0].dataset.menuIsExpanded;
+
+				if (expand == 'false') {
+					document.querySelectorAll('.menu')[0].dataset.menuIsExpanded = true;
+				} else {
+					document.querySelectorAll('.menu')[0].dataset.menuIsExpanded = false;
+				}
+
+			}
+
+		}
+	});
+</script>

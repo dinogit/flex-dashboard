@@ -1,0 +1,26 @@
+ul.breadcrumb {
+    outline-style: none;
+    display: block;
+    padding: 1.1rem;
+    background: transparent;
+    font-size: 13px;
+
+
+    li {
+        display: inline-block;
+
+        &.is-active {
+            color: #848484;
+        }
+
+        & + li:before {
+            padding: 0 5px;
+            color: #848484;
+            content: "/\00a0";
+        }
+
+        a {
+            color: $grey;
+        }
+    }
+}
