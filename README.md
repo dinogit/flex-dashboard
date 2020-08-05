@@ -1,6 +1,6 @@
 ## Flex Dashboard
 
-Played with css flex 
+Played with css flex. Idea was that content should move also when menu is opening.
 
 # Menu open
 
