@@ -2,6 +2,8 @@
 
 Played with css flex. Idea was that content should move also when menu is opening.
 
+Url: https://wblke.csb.app/
+
 # Menu open
 
 ![Menu open](https://github.com/dinogit/flex-dashboard/blob/master/img/expand.png?raw=true "Title")
